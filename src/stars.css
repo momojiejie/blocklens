@@ -1,0 +1,26 @@
+
+.stars-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.stars {
+  width: 200%;
+  height: 200%;
+  background: transparent url('https://raw.githubusercontent.com/JulianLaval/canvas-particle-network/master/img/demo-bg.jpg') repeat top center;
+  background-size: cover;
+  animation: moveStars 60s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes moveStars {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-200px) scale(1.05);
+  }
+}

@@ -1,19 +1,18 @@
-import { useState } from "react";
-import viteLogo from "/vite.svg";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Search from "./pages/Search";
+import CoinDetail from "./pages/CoinDetail"; // <-- import your new detail page
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Features from "./components/Features";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Features />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/search" element={<Search />} />
+        <Route path="/coin/:id" element={<CoinDetail />} /> {/* new route */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

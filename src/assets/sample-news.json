@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Bitcoin Soars 32% in 2025 Amid Regulatory Tailwinds",
+    "source": "Reuters",
+    "publishedAt": "2025-08-14",
+    "url": "https://reuters.com/article/some-article",
+    "image": "/news_images/bitcoin_rally.png",
+    "summary": "Bitcoin has risen nearly 32% so far in 2025, driven by regulatory optimism and sustained interest from institutional investors."
+  },
+  {
+    "id": 2,
+    "title": "CFTC May Allow Spot Crypto Contracts Trading",
+    "source": "Lowenstein Crypto Brief",
+    "publishedAt": "2025-08-07",
+    "url": "https://lowenstein.com/news-insights/newsletters/crypto-brief-august-7-2025",
+    "image": "/news_images/cftc_spot.png",
+    "summary": "The CFTC confirmed plans to enable trading of spot crypto asset contracts on registered platforms, boosting regulatory clarity."
+  },
+  {
+    "id": 3,
+    "title": "Ethereum Breaks $4,000 Milestone",
+    "source": "Crypto News",
+    "publishedAt": "2025-08-08",
+    "url": "https://www.marketpulse.com/markets/ethereum-breaks-4000-and-marks-new-highs-to-the-current-cycle-crypto-news",
+    "image": "/news_images/ethereum_4000.png",
+    "summary": "Ethereum crossed $4,000 for the first time in 2025, signaling renewed bullish momentum in the altcoin markets."
+  },
+  {
+    "id": 4,
+    "title": "Metaplanet Launches $3.7B Bitcoin Accumulation Strategy",
+    "source": "Cointelegraph",
+    "publishedAt": "2025-09-02",
+    "url": "https://cointelegraph.com/news/metaplanet-clear-path-for-3-7b-bitcoin-accumulation",
+    "image": "/news_images/metaplanet.png",
+    "summary": "Metaplanet received shareholder approval for a $3.7B capital raise aimed at implementing a massive Bitcoin accumulation strategy."
+  },
+  {
+    "id": 5,
+    "title": "Crypto Thefts Hit $163M in August",
+    "source": "Cointelegraph",
+    "publishedAt": "2025-09-02",
+    "url": "https://cointelegraph.com/news/crypto-thefts-hit-163m-in-august",
+    "image": "/news_images/crypto_thefts.png",
+    "summary": "Hacking losses reached $163 million in August, marking a 15% month-over-month increase in crypto-related security incidents."
+  },
+  {
+    "id": 6,
+    "title": "Argentina’s $LIBRA Meme Coin Scandal Shakes Markets",
+    "source": "Wikipedia / The Economist",
+    "publishedAt": "2025-02-28",
+    "url": "https://en.wikipedia.org/wiki/%24Libra_cryptocurrency_scandal",
+    "image": "/news_images/libra_scandal.png",
+    "summary": "Argentina's $LIBRA memecoin surged after presidential promotion, then collapsed—triggering allegations of rug-pull and $250M investor losses."
+  }
+]
