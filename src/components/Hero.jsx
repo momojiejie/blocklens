@@ -28,16 +28,6 @@ function getTopGainers(coins) {
 export default function Hero({ coins = [] }) {
   const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();
-  const [coinData, setCoinData] = useState([]);
-  
-    useEffect(() => {
-        fetch("http://localhost:3001/api/listings")
-          .then(res => res.json())
-          .then(data => {
-            setCoinData(data.data);
-          });
-      }, []);
-
 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
@@ -50,9 +40,9 @@ export default function Hero({ coins = [] }) {
     }
   };
 
-  const popular = getPopular(coinData);
-  const newCoins = getNew(coinData);
-  const topGainers = getTopGainers(coinData);
+  const popular = getPopular(coins);
+  const newCoins = getNew(coins);
+  const topGainers = getTopGainers(coins);
 
   return (
     <section className="relative min-h-[80vh] overflow-hidden">

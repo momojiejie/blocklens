@@ -2,21 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Coincard({ title, coins = [] }) {
-  const [coinData, setCoinData] = useState([]);
-
-  useEffect(() => {
-    if (coins && coins.length > 0) {
-      setCoinData(coins);
-    } else {
-      fetch("http://localhost:3001/api/listings")
-        .then((res) => res.json())
-        .then((data) => {
-          console.log("Fetched data:", data); // Add this line
-          setCoinData(data.data); // CoinMarketCap API returns { data: [...] }
-        })
-        .catch((err) => console.error(err));
-    }
-  }, [coins]);
 
   function getNew(coins) {
     if (!Array.isArray(coins)) return [];
@@ -34,8 +19,8 @@ export default function Coincard({ title, coins = [] }) {
         </Link>
       </div>
       <div className="coins">
-        {coinData && coinData.length > 0 ? (
-          getNew(coinData).map((coin) => (
+        {coins && coins.length > 0 ? (
+          getNew(coins).map((coin) => (
             <div className="flex justify-between items-center py-2 border-b border-zinc-800" key={coin.id}>
               <div className="coin_logo">
                 <img src={coin.logo} alt={coin.name} className="w-6 h-6" />
